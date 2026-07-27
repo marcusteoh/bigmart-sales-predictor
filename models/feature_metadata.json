@@ -1,0 +1,93 @@
+{
+  "features": [
+    "Item_Weight",
+    "Item_Visibility",
+    "Item_MRP",
+    "Outlet_Age",
+    "Item_Fat_Content",
+    "Item_Type",
+    "Outlet_Size",
+    "Outlet_Location_Type",
+    "Outlet_Type"
+  ],
+  "numeric_features": [
+    "Item_Weight",
+    "Item_Visibility",
+    "Item_MRP",
+    "Outlet_Age"
+  ],
+  "categorical_features": [
+    "Item_Fat_Content",
+    "Item_Type",
+    "Outlet_Size",
+    "Outlet_Location_Type",
+    "Outlet_Type"
+  ],
+  "categorical_options": {
+    "Item_Fat_Content": [
+      "Low Fat",
+      "Non-Edible",
+      "Regular"
+    ],
+    "Item_Type": [
+      "Baking Goods",
+      "Breads",
+      "Breakfast",
+      "Canned",
+      "Dairy",
+      "Frozen Foods",
+      "Fruits and Vegetables",
+      "Hard Drinks",
+      "Health and Hygiene",
+      "Household",
+      "Meat",
+      "Others",
+      "Seafood",
+      "Snack Foods",
+      "Soft Drinks",
+      "Starchy Foods"
+    ],
+    "Outlet_Size": [
+      "High",
+      "Medium",
+      "Small"
+    ],
+    "Outlet_Location_Type": [
+      "Tier 1",
+      "Tier 2",
+      "Tier 3"
+    ],
+    "Outlet_Type": [
+      "Grocery Store",
+      "Supermarket Type1",
+      "Supermarket Type2",
+      "Supermarket Type3"
+    ]
+  },
+  "numeric_ranges": {
+    "Item_Weight": {
+      "min": 4.555,
+      "max": 21.35,
+      "mean": 12.875420237117032
+    },
+    "Item_Visibility": {
+      "min": 0.003574698,
+      "max": 0.328390948,
+      "mean": 0.07048511499476878
+    },
+    "Item_MRP": {
+      "min": 31.29,
+      "max": 266.8884,
+      "mean": 140.9927819781767
+    },
+    "Outlet_Age": {
+      "min": 4.0,
+      "max": 28.0,
+      "mean": 15.168133286401503
+    }
+  },
+  "reference_year": 2013,
+  "test_rmse": 1028.077110868783,
+  "test_mae": 720.2121020270015,
+  "test_r2": 0.6111279668329954
+}
