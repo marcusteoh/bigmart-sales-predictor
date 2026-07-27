@@ -1,5 +1,24 @@
 {
-  "features": [
+  "model_name": "Gradient Boosting (tuned)",
+  "model_params": {
+    "subsample": 0.9,
+    "n_estimators": 100,
+    "max_depth": 3,
+    "learning_rate": 0.05
+  },
+  "sklearn_version": "1.8.0",
+  "app_input_columns": [
+    "Item_Weight",
+    "Item_Fat_Content",
+    "Item_Visibility",
+    "Item_Type",
+    "Item_MRP",
+    "Outlet_Establishment_Year",
+    "Outlet_Size",
+    "Outlet_Location_Type",
+    "Outlet_Type"
+  ],
+  "model_features": [
     "Item_Weight",
     "Item_Visibility",
     "Item_MRP",
@@ -24,11 +43,6 @@
     "Outlet_Type"
   ],
   "categorical_options": {
-    "Item_Fat_Content": [
-      "Low Fat",
-      "Non-Edible",
-      "Regular"
-    ],
     "Item_Type": [
       "Baking Goods",
       "Breads",
@@ -64,11 +78,20 @@
       "Supermarket Type3"
     ]
   },
+  "fat_content_input_options": [
+    "Low Fat",
+    "Regular"
+  ],
+  "non_consumable_item_types": [
+    "Health and Hygiene",
+    "Household",
+    "Others"
+  ],
   "numeric_ranges": {
     "Item_Weight": {
       "min": 4.555,
       "max": 21.35,
-      "mean": 12.875420237117032
+      "mean": 12.875411894959115
     },
     "Item_Visibility": {
       "min": 0.003574698,
@@ -87,7 +110,17 @@
     }
   },
   "reference_year": 2013,
-  "test_rmse": 1028.077110868783,
-  "test_mae": 720.2121020270015,
-  "test_r2": 0.6111279668329954
+  "target_mean": 2181.288913575032,
+  "target_median": 1794.331,
+  "test_rmse": 1028.5137750834006,
+  "test_mae": 720.5085325954401,
+  "test_r2": 0.6107975586158357,
+  "cv_rmse_mean": 1093.041367605629,
+  "cv_rmse_std": 27.10695171072547,
+  "naive_baseline_rmse": 1651.989750472933,
+  "naive_baseline_mae": 1321.738728500184,
+  "interval_nominal_coverage": 0.8,
+  "interval_empirical_coverage": 0.8,
+  "interval_mean_width": 2409.495183926997,
+  "n_training_rows": 8523
 }
