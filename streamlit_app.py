@@ -1,6 +1,6 @@
 """BigMart Sales Predictor — Streamlit front end for the tuned scikit-learn pipeline.
 
-Run with:  streamlit run app.py
+Run with:  streamlit run streamlit_app.py
 
 The exported pipeline does its own cleaning and imputation, so this app sends *raw* inputs
 (the nine fields a category manager can actually know) and lets the pipeline handle the rest.

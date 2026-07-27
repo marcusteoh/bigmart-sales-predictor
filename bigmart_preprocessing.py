@@ -4,7 +4,7 @@ These transformers live in a module rather than inside the notebook for two reas
 
 1. **Deployability.** ``joblib`` pickles a *reference* to a class (module path +
    name), not the class's source code. A transformer defined in the notebook's
-   ``__main__`` namespace cannot be unpickled by ``app.py``, so the exported
+   ``__main__`` namespace cannot be unpickled by ``streamlit_app.py``, so the exported
    pipeline would fail to load in the Streamlit app.
 2. **Correctness.** Putting every cleaning and imputation rule *inside* the
    scikit-learn pipeline means each rule is re-fitted on the training rows of
